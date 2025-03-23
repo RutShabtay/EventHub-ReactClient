@@ -1,0 +1,74 @@
+.producer-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, #ff758c, #ff7eb3, #c9a7eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.producer-card {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 3rem;
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px; 
+    width: 95%;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease-in-out;
+}
+
+.producer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.producer-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.producer-info {
+    font-size: 1.3rem;
+    color: #444;
+    margin: 0.5rem 0;
+}
+
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 85px;  
+    height: 38px;
+    text-align: center;
+    padding: 4px;
+
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: aliceblue;
+
+}

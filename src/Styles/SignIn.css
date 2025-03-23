@@ -1,0 +1,115 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signin-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.signin-form {
+    margin: auto;
+    background: white;
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    color: #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.signin-form:hover {
+    transform: scale(1.05);
+    backdrop-filter: none; /* מסירים את הטשטוש כדי לשמור על חדות */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+.signin-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: calc(100% - 30px);
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid rgba(200, 200, 200, 0.5);
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: rgba(100, 100, 100, 0.7);
+}
+
+.input-group input:focus {
+    border-color: #a18cd1;
+}
+
+.signin-form button {
+    background: linear-gradient(135deg, #fbc2eb, #a18cd1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(161, 140, 209, 0.3);
+}
+
+.signin-form button:hover {
+    background: linear-gradient(135deg, #e6a2d7, #8a72be);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(161, 140, 209, 0.5);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(200, 200, 200, 0.5);
+    color: #555;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(200, 200, 200, 0.3);
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
