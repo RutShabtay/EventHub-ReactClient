@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { EventProducerContext } from "../Contexts/EventProducer.api";
 import { EventProducer } from "../Types/EventProducerType";
-import "../styles/ProducerDetailsForUser.css";  
+import "../Styles/ProducerDetailsForUser.css";  
 
 export const ProducerDetailsForUser = () => {
     const { producerEmail } = useParams();

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { EventContext } from "../Contexts/Event.api";
 import { Event } from "../Types/EventType";
 import { useNavigate } from "react-router-dom";
-import "../styles/EventDetailsForProducer.css";
+import "../Styles/EventDetailsForProducer.css";
 
 
 export const EventDetailsForProducer = () => {

@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { EventContext } from "../Contexts/Event.api";
 import { Event } from "../Types/EventType";
 import { NavLink, useNavigate } from "react-router-dom";
-import '../styles/EventListForUser.css';
+import '../Styles/EventListForUser.css';
 
 export const EventListForUsers = () => {
     

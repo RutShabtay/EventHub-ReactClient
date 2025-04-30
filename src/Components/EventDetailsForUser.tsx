@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { EventContext } from "../Contexts/Event.api";
 import { Event } from "../Types/EventType";
-import "../styles/EventDetailsForUser.css"; 
+import "../Styles/EventDetailsForUser.css"; 
 
 export const EventDetailsForUser = () => {
     const { eventId } = useParams();

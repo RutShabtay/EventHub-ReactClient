@@ -3,7 +3,7 @@ import { EventContext } from "../Contexts/Event.api";
 import { Event } from "../Types/EventType";
 import { NavLink } from "react-router-dom";
 import { AddEvent } from "./AddEvent";
-import "../styles/ProducerEventsList.css"; 
+import "../Styles/ProducerEventsList.css"; 
 
 export const ProducerEventList = ({ producerEmail }: { producerEmail: string }) => {
     const context = useContext(EventContext);

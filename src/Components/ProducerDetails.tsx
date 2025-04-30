@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { EventProducer } from "../Types/EventProducerType";
 import { EventProducerContext } from "../Contexts/EventProducer.api";
 import { NavLink, useLocation } from "react-router-dom";
-import "../styles/ProducerDetails.css"; 
+import "../Styles/ProducerDetails.css"; 
 
 export const ProducerDetails = ({ producerDetails }: { producerDetails?: EventProducer }) => {
     const location = useLocation();

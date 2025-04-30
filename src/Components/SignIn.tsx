@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { EventProducerContext } from "../Contexts/EventProducer.api";
 import { EventProducer } from "../Types/EventProducerType";
 import { useNavigate } from "react-router-dom";
-import '../styles/SignIn.css';
+import '../Styles/SignIn.css';
 
 export const SignIn = () => {
     const [ProducerName, setProducerName] = useState('');
