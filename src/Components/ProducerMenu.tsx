@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { EventProducerContext } from "../Contexts/EventProducer.api";
 import { EventProducer } from "../Types/EventProducerType";
 import { NavLink, useNavigate } from "react-router-dom";
-import "../styles/ProducerMenu.css";
+import "../Styles/ProducerMenu.css";
 
 export const ProducerMenu = () => {
     const [isLogIn, setIsLogin] = useState(false);
