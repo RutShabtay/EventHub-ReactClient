@@ -56,7 +56,8 @@ export const EventDetailsForProducer = () => {
 
         if (put) {
             try {
-                const res = await put(updateEvent, Number(eventId));
+                // const res = 
+                await put(updateEvent, Number(eventId));
                 alert("The event was successfully updated 😊");
                 navigate(-1);
             }

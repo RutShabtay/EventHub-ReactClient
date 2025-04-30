@@ -3,7 +3,7 @@ import './App.css'
 import { MainMenu } from './Components/MainMenu'
 
 function App() {
-  const [count] = useState(0)
+  // const [count] = useState(0)
 
   return (
     <>
